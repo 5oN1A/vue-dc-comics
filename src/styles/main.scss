@@ -1,0 +1,12 @@
+@import "variables";
+
+main {
+    background-color: $main_bg;
+    h1 {
+        color:white;
+        font-family: $dc_narrow;
+        padding-top: $padding_60;
+        padding-bottom: $padding_60;
+        font-size: 24px;
+    }
+}

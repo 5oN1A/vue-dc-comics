@@ -1,0 +1,31 @@
+@import "variables";
+
+footer {
+    .section_1 {
+        background-color: $dc_blue;
+        padding-top: $padding_50;
+        padding-bottom: $padding_50;
+        ul {
+            justify-content: space-around;
+            a {
+                color: white;
+                text-decoration: none;
+                align-items: center;
+                h3 {
+                    font-size: $text_14;
+                    font-family: $dc_normal;
+                    font-weight: 500;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    .section_2 {
+        
+    }
+}
