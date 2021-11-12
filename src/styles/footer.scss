@@ -14,10 +14,12 @@ footer {
         padding-bottom: $padding_50;
         ul {
             justify-content: space-around;
+            color: $white;
             a {
                 color: white;
                 text-decoration: none;
                 align-items: center;
+                color: $white;
                 h3 {
                     font-size: $text_14;
                     font-family: $dc_normal;
@@ -35,8 +37,17 @@ footer {
     .section_2 {
         background-image: url(./assets/footer-bg.jpg);
         background-size: cover;
-        padding-top: $padding_50;
-        padding-bottom: $padding_60;
+      
+
+
+        .container {
+            background-image: url(./assets/dc-logo-bg.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-top: $padding_50;
+            padding-bottom: $padding_60;
+
+                    
 
         h3 {
             color: $white;
@@ -51,18 +62,54 @@ footer {
             font-family: $dc_normal;
             line-height: 22px;
         }
-        .col_4 {
+        /* .col_4 {
             position: relative;
             flex-grow: 1;
             img {
                 position: absolute;
-                right: 0;
-                bottom: 100;
+                transform: translate();
+                overflow: hidden;
             }
-        }
+        } */
+    }
     }
 
     .section_3 {
         background-color: $footer_bg;
+        padding-top: $padding_60 / 2;
+        padding-bottom: $padding_60 / 2;
+
+        .container {
+            align-items: center;
+
+        .sign_up_button {
+            border: 2px solid $dc_blue;
+            color: $white;
+            font-family: $dc_normal;
+            text-decoration: none;
+            font-weight: 600;
+            line-height: 55px;
+            padding: 0 15px;
+        }
+        .social_section {
+            flex-grow: 1;
+            justify-content: end;
+            align-items: center;
+                        
+
+            h3 {
+                color: $dc_blue;
+                font-family: $dc_narrow;
+                font-weight: 800;
+                font-size: 22px;
+                padding-right: $padding_60 / 2;
+            }
+            img {
+                padding-right: $padding_60 / 4;
+                width: 55px;
+            }
+        }
+    }
+
     }
 }

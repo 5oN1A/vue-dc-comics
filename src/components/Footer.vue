@@ -1,68 +1,14 @@
 <template>
   <footer>
-    <img class="logo_bg" src="../assets/dc-logo-bg.png" alt="" />
     <div class="section_1">
       <div class="container">
         <ul class="d-flex">
-          <!-- <li v-for="(item, i) in buyComicsItems" :key="i">
-          <a :href="item.href"> 
-              <img :src="item.src" :alt="i"/>
-              <p>{{item.title}}</p>
-          </a>
-        </li> -->
-          <li>
-            <a class="d-flex" href="#">
+          <li v-for="(item, i) in buyComicsItems" :key="i">
+            <a class="d-flex" :href="item.href">
               <div class="card">
-                <img
-                  src="../assets/buy-comics-digital-comics.png"
-                  alt="digital comics"
-                />
+                <img :src="item.src" :alt="i" />
               </div>
-              <h3>DIGITAL COMICS</h3>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <div class="card">
-                <img
-                  src="../assets/buy-comics-merchandise.png"
-                  alt="digital comics"
-                />
-              </div>
-              <h3>DC MERCHANDISE</h3>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <div class="card">
-                <img
-                  src="../assets/buy-comics-subscriptions.png"
-                  alt="digital comics"
-                />
-              </div>
-              <h3>SUBSCRIPTION</h3>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <div class="card">
-                <img
-                  src="../assets/buy-comics-shop-locator.png"
-                  alt="digital comics"
-                />
-              </div>
-              <h3>COMIC SHOP LOCATOR</h3>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <div class="card">
-                <img
-                  src="../assets/buy-dc-power-visa.svg"
-                  alt="digital comics"
-                />
-              </div>
-              <h3>DC POWER VISA</h3>
+              <h3>{{ item.title }}</h3>
             </a>
           </li>
         </ul>
@@ -114,15 +60,21 @@
             <li><a href="#">DC Power Visa</a></li>
           </ul>
         </div>
+        
       </div>
+     
     </div>
     <div class="section_3">
       <div class="container d-flex">
-          <button>SIGN-UP NOW</button>
-          <div class="social_section">
-              <h3>FOLLOW US</h3>
-              
-          </div>
+        <a class="sign_up_button" href="#">SIGN-UP NOW</a>
+        <div class="social_section d-flex">
+          <h3>FOLLOW US</h3>
+          <img src="@/assets/footer-facebook.png" alt="facebook icon" />
+          <img src="@/assets/footer-twitter.png" alt="twitter icon" />
+          <img src="@/assets/footer-youtube.png" alt="youtube icon" />
+          <img src="@/assets/footer-pinterest.png" alt="pinterest icon" />
+          <img src="@/assets/footer-periscope.png" alt="periscope icon" />
+        </div>
       </div>
     </div>
   </footer>
@@ -142,34 +94,33 @@ export default {
   name: "Footer",
   data() {
     return {
-      /*  buyComicsItems: [
+      buyComicsItems: [
         {
           title: "DIGITAL COMICS",
           href: "#",
-          src: "../assets/buy-comics-digital-comics.png",
-          
+          src: require("@/assets/buy-comics-digital-comics.png"),
         },
         {
           title: "DC MERCHANDISE",
           href: "#",
-          src: "../assets/buy-comics-merchandise.png",
+          src: require("@/assets/buy-comics-merchandise.png"),
         },
         {
           title: "SUBSCRIPTION",
           href: "#",
-          src: "../assets/buy-comics-subscriptions.png",
+          src: require("@/assets/buy-comics-subscriptions.png"),
         },
         {
           title: "COMIC SHOP LOCATOR",
           href: "#",
-          src: "../assets/buy-comics-shop-locator.png",
+          src: require("@/assets/buy-comics-shop-locator.png"),
         },
         {
           title: "DC POWER VISA",
           href: "#",
-          src: "../assets/buy-dc-power-visa.png",
+          src: require("@/assets/buy-dc-power-visa.svg"),
         },
-      ], */
+      ],
     };
   },
 };
