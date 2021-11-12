@@ -5,7 +5,7 @@
       <nav>
         <ul class="d-flex">
           <li v-for="(item, i) in navItems" :key="i">
-              <a :href="href">{{item.title}}</a>
+              <a :href="item.href" >{{item.title}}</a>
             </li>
           
         </ul>

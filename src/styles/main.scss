@@ -1,12 +1,72 @@
 @import "variables";
 
 main {
-    background-color: $main_bg;
-    h1 {
-        color:white;
-        font-family: $dc_narrow;
-        padding-top: $padding_60;
-        padding-bottom: $padding_60;
-        font-size: 24px;
+    position: relative;
+
+  
+
+    .jumbo_section {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .cards_section {
+        background-color: $main_bg;
+        min-height: 500px;
+        text-align: center;
+
+
+        .d-flex {
+            flex-wrap: wrap;
+            gap: 20px;
+
+            h1 {
+                color: $white;
+                background-color: $dc_blue;
+                font-family: $dc_narrow;
+                font-size: 26px;
+                padding: $padding_60 / 4 $padding_50 / 2;
+                position: absolute;
+               transform: translateY(-50%);
+            }
+
+
+            .dc_card {
+                width: calc((100% / 6) - 20px);
+                padding-top: $padding_50;
+
+
+                .card_img {
+                    height: 180px;
+                    object-fit: cover;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                p {
+                    color: $white;
+                    font-family: $dc_normal;
+                    font-size: $text_14;
+                    padding-top: $padding_60 / 3;
+                    text-transform: uppercase;
+                    text-align: start;
+                }
+            }
+           
+        }
+        button {
+            color: $white;
+            background-color: $dc_blue;
+            font-family: $dc_narrow;
+            font-size: 14px;
+            font-weight: 700;
+            padding: $padding_60 / 5 $padding_60;
+            border: none;
+            margin-top: $padding_60;
+            margin-bottom: $padding_60 / 4;
+        }
     }
 }
