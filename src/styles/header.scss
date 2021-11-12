@@ -9,18 +9,26 @@ header {
         img {
             width: 80px;
         }
-        nav{
+        nav {
             flex-grow: 1;
             ul {
                 justify-content: end;
                 list-style: none;
                 font-family: $dc_narrow;
                 font-weight: 800;
-                a {
-                    font-size: $text_14;
-                    text-decoration: none;
+                li {
                     color: $nav_text;
-                    padding: 15px
+
+
+                    &.active a{
+                        color: $dc_blue;
+                    }
+                    
+                    a {
+                        font-size: $text_14;
+                        text-decoration: none;
+                        padding: 15px;
+                    }
                 }
             }
         }

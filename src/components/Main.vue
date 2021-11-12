@@ -13,14 +13,7 @@
           :img="dcItem.thumb"
           :title="dcItem.series"
         ></DcCard>
-
-        <!-- <div class="dc_card">
-          <div class="card_img">
-            <img :src="dcItem.thumb" :alt="dcItem.series"/>
-          </div>
-          <p>{{dcItem.series}}</p>
-        </div>
- -->
+        
       </div>
       <button>LOAD MORE</button>
     </section>

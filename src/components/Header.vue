@@ -4,7 +4,7 @@
       <img src="../assets/dc-logo.png" alt="" />
       <nav>
         <ul class="d-flex">
-          <li v-for="(item, i) in navItems" :key="i">
+          <li v-for="(item, i) in navItems" :key="i" :class="i === currentActive ? 'active' : ''">
               <a :href="item.href" >{{item.title}}</a>
             </li>
           
@@ -62,6 +62,7 @@ export default {
           href: "#",
         },
       ],
+      currentActive: 5,
     };
   },
 };
